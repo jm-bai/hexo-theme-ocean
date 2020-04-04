@@ -11,3 +11,11 @@
       content "\f18c"
       font-family feathericon
       margin-right .5rem
+    > .category-list-count
+      margin-left: .5rem;
+      &::before
+        content: ' (';
+        display: inline;
+      &::after
+        content: ') ';
+        display: inline;

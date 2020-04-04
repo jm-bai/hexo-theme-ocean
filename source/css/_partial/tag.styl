@@ -11,3 +11,11 @@
       content "\f153"
       font-family feathericon
       margin-right .5rem
+    > .tag-list-count
+      margin-left: .5rem;
+      &::before
+        content: ' (';
+        display: inline;
+      &::after
+        content: ') ';
+        display: inline;

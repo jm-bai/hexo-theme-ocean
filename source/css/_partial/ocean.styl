@@ -5,6 +5,12 @@
   .brand
     width brand-size
 
+.video.full-height
+  .video-media
+    height 100vh
+  .video-learn-more
+    bottom: 3rem
+
 .video-frame
   position absolute
   z-index 1
@@ -43,8 +49,11 @@
   left 50%
   transform translate(-50%, -65%)
   a, &
-    color white
+    color #333
     text-decoration none
+.text-white
+  a, &
+    color white
 
 .video-learn-more
   position absolute
@@ -54,6 +63,6 @@
   left 0
   a > .fe
     font-size 3rem
-    color gray
+    color #fff
     &:hover
       color sea
