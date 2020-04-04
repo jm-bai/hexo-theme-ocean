@@ -6,13 +6,18 @@
       </div>
     <% } %>
     <div class="video-media">
-      <video playsinline="" autoplay="" loop="" muted="" data-autoplay=""
-             poster="<%- theme.ocean.path %>ocean.png" x5-video-player-type="h5">
-        <source src="<%- theme.ocean.path %>ocean.mp4" type="video/mp4">
-        <source src="<%- theme.ocean.path %>ocean.ogv" type="video/ogg">
-        <source src="<%- theme.ocean.path %>ocean.webm" type="video/webm">
-        <p>Your user agent does not support the HTML5 Video element.</p>
-      </video>
+      <% if (theme.ocean.video) { %>
+        <video playsinline="" autoplay="" loop="" muted="" data-autoplay=""
+             poster="<%- theme.ocean.videoPath %>ocean.png" x5-video-player-type="h5">
+          <source src="<%- theme.ocean.videoPath %>ocean.mp4" type="video/mp4">
+          <source src="<%- theme.ocean.videoPath %>ocean.ogv" type="video/ogg">
+          <source src="<%- theme.ocean.videoPath %>ocean.webm" type="video/webm">
+          <p>Your user agent does not support the HTML5 Video element.</p>
+        </video>
+      <% } %>
+      <% if (theme.ocean.image) { %>
+        <img src="<%- theme.ocean.bgImage %>" alt="background">
+      <% } %>
       <div class="video-overlay"></div>
     </div>
     <div class="video-inner text-center text-white">

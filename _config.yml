@@ -1,29 +1,32 @@
 # Menu
 menu:
-  Home: /
-  Archives: /archives
-  Gallery: /gallery
-  About: /about
-  Links: /links
+  主页: /
+  分类: /categories
+  标签: /tags
+  归档: /archives
 rss: /atom.xml
 
 
 # Miscellaneous
-favicon: /favicon.ico
-brand: /images/hexo.svg
+favicon: /images/avatar.jpg
+brand: /images/avatar.jpg
 
 # Ocean Video
 # Because I put videos in multiple formats on the same path, I just labeled the path here.
 ocean:
-  overlay: true
+  overlay: false
+  video: false
+  image: true
+  videoPath: /images/ocean/
   path: /images/ocean/
-  brand: /images/hexo-inverted.svg
+  brand: /images/avatar.jpg
+  bgImage: /images/background.jpg
 
 # Content
-excerpt_link: Read More...
+excerpt_link: 阅读全文...
 
 # Tags
-show_count: false
+show_count: true
 
 # Toc
 toc: true
@@ -33,12 +36,12 @@ fancybox: true
 
 # Gitalk
 gitalk:
-  enable: false # true
-  clientID: # GitHub Application Client ID
-  clientSecret: # Client Secret
-  repo: # Repository name
-  owner: # GitHub ID
-  admin: # GitHub ID
+  enable: true # true
+  clientID: 4f6f2101bdbd8c5b014d # GitHub Application Client ID
+  clientSecret: 2b5d1579e2dd283560a14d8dbd463e76038b3e7d # Client Secret
+  repo: ittalk-issues # Repository name
+  owner: jm-bai # GitHub ID
+  admin: jm-bai # GitHub ID
 
 # Valine
 valine:
